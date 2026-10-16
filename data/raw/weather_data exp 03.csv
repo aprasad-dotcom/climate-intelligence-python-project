@@ -1,0 +1,51 @@
+Station_ID,City,State,Temperature,Humidity,Condition,Wind_Speed
+WS001,Pune,Maharashtra,34,58,Cloudy,12
+WS002,Mumbai,Maharashtra,31,72,Humid,18
+WS003,Nagpur,Maharashtra,39,48,Hot,14
+WS004,Nashik,Maharashtra,33,55,Sunny,10
+WS005,Chhatrapati Sambhajinagar,Maharashtra,37,50,Hot,16
+WS006,Delhi,Delhi,40,42,Hot,15
+WS007,Jaipur,Rajasthan,41,38,Hot,20
+WS008,Jodhpur,Rajasthan,42,35,Hot,22
+WS009,Kota,Rajasthan,39,45,Sunny,13
+WS010,Udaipur,Rajasthan,35,52,Cloudy,11
+WS011,Ahmedabad,Gujarat,38,50,Hot,17
+WS012,Surat,Gujarat,32,70,Humid,19
+WS013,Vadodara,Gujarat,36,58,Cloudy,14
+WS014,Rajkot,Gujarat,39,48,Hot,18
+WS015,Bhavnagar,Gujarat,35,64,Humid,16
+WS016,Bhopal,Madhya Pradesh,37,55,Sunny,12
+WS017,Indore,Madhya Pradesh,35,60,Cloudy,13
+WS018,Gwalior,Madhya Pradesh,40,44,Hot,17
+WS019,Hyderabad,Telangana,34,62,Cloudy,15
+WS020,Warangal,Telangana,36,58,Sunny,16
+WS021,Chennai,Tamil Nadu,33,74,Humid,21
+WS022,Madurai,Tamil Nadu,35,68,Sunny,18
+WS023,Coimbatore,Tamil Nadu,31,72,Cloudy,12
+WS024,Bengaluru,Karnataka,28,76,Cloudy,10
+WS025,Mysuru,Karnataka,29,74,Rainy,9
+WS026,Mangaluru,Karnataka,30,82,Rainy,14
+WS027,Kochi,Kerala,29,85,Rainy,11
+WS028,Thiruvananthapuram,Kerala,30,80,Rainy,13
+WS029,Vijayawada,Andhra Pradesh,36,65,Hot,19
+WS030,Visakhapatnam,Andhra Pradesh,32,78,Humid,17
+WS031,Kolkata,West Bengal,34,76,Humid,12
+WS032,Bhubaneswar,Odisha,35,73,Cloudy,15
+WS033,Patna,Bihar,38,55,Hot,14
+WS034,Ranchi,Jharkhand,30,68,Cloudy,10
+WS035,Lucknow,Uttar Pradesh,39,50,Hot,16
+WS036,Kanpur,Uttar Pradesh,40,47,Hot,18
+WS037,Agra,Uttar Pradesh,41,43,Hot,19
+WS038,Varanasi,Uttar Pradesh,38,56,Sunny,13
+WS039,Meerut,Uttar Pradesh,37,52,Cloudy,12
+WS040,Noida,Uttar Pradesh,39,48,Hot,15
+WS041,Gurugram,Haryana,40,45,Hot,17
+WS042,Amritsar,Punjab,36,50,Sunny,11
+WS043,Ludhiana,Punjab,35,55,Cloudy,10
+WS044,Dehradun,Uttarakhand,28,70,Rainy,8
+WS045,Shimla,Himachal Pradesh,20,65,Cloudy,7
+WS046,Srinagar,Jammu and Kashmir,22,58,Sunny,9
+WS047,Guwahati,Assam,29,82,Rainy,12
+WS048,Ranchi,Jharkhand,31,66,Cloudy,11
+WS049,Raipur,Chhattisgarh,38,52,Hot,16
+WS050,Bengaluru,Karnataka,29,75,Cloudy,10
