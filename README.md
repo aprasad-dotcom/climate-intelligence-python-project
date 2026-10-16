@@ -1,28 +1,43 @@
 # Climate Intelligence
 
-**Climate Intelligence for Heatwave Monitoring, Prediction and Early Warning** is a local Windows desktop app built with Python, Tkinter and SQLite. It brings together the six programming experiments in a practical climate-monitoring interface.
+**Climate Intelligence for Heatwave Monitoring, Prediction and Early Warning** is a local Windows desktop application built with Python, Tkinter and SQLite.
 
 ## Run on Windows
 
-1. Install Python 3.10 or newer from [python.org](https://www.python.org/downloads/windows/) and include Tcl/Tk.
-2. Open this folder in VS Code and run `py app.py` in the terminal, or double-click `run_app.bat`.
-3. On first launch, the app creates a local SQLite database and loads 150 observations from the three small CSV files. The 24,070-row dataset is available for manual import.
+1. Install Python 3.10 or newer and include Tcl/Tk.
+2. Open this project folder in VS Code.
+3. Run `py app.py` in the terminal, or double-click `run_app.bat`.
 
-No third-party Python packages are needed; `requirements.txt` is intentionally empty of external dependencies.
+No third-party Python packages are required.
 
-## What it includes
+## Application features
 
-- Overview dashboard, searchable climate records, analysis and alerts, trend estimate, and project details.
-- SQLite record storage, CSV import/export, validation, synthetic live simulation, and concurrent monitoring.
-- Six-experiment mapping, dataset manifest, test suite, presentation guide, and traceability notes.
-- Three five-page editable project reports (DOCX) with PDF review copies in [`reports/`](reports/).
+- Dashboard with climate metrics, temperature chart, illustrative station map and alert feed.
+- Climate-record table with search, add/edit/delete, CSV import and export.
+- Temperature and rainfall analysis, heat-risk categories, concurrent monitoring and a simple trend estimate.
+- Synthetic live sensor simulation and a deterministic heatwave demonstration.
+- Local SQLite persistence; first launch seeds 150 records from the smaller CSV datasets.
 
-## Tests
+## How the GUI is organized
 
-Run `py -m unittest discover -s tests -v` from this folder. Tests use temporary databases.
+- `app.py` builds the main Tkinter window, navigation and application screens.
+- `ui_components.py` contains reusable panels, metric cards, charts, heat-map canvas and scrollable frame.
+- `theme.py` defines the color palette and interface styling.
+- `climate_engine.py` validates observations and computes heat/rainfall analysis.
+- `alert_engine.py` classifies temperature risk and sensor watch conditions.
+- `database.py` manages the SQLite schema, record operations, summaries and CSV export.
+- `weather_data.py` parses and normalizes climate CSV datasets.
 
-## Important limitations
+## Data and tests
 
-The live simulation and deterministic heatwave demonstration are synthetic. The 37°C/40°C alert bands are classroom settings, not official IMD criteria. The trend feature is a simple estimate, not trained machine learning or an official forecast. The station map is illustrative, not GIS. The supplied datasets' provenance is recorded as provided and not independently verified.
+The supplied CSV and XLSX files are in `data/raw/`. The app imports CSV files; it keeps the XLSX companions for reference. The 24,070-row Experiment 05 dataset is available for manual import and is not loaded automatically.
 
-See [DATASET_MANIFEST.md](DATASET_MANIFEST.md), [EXPERIMENT_MAPPING.md](EXPERIMENT_MAPPING.md), and [PROJECT_PRESENTATION_GUIDE.md](PROJECT_PRESENTATION_GUIDE.md) for supporting details.
+Run the tests from this folder with:
+
+```powershell
+py -m unittest discover -s tests -v
+```
+
+## Limitations
+
+Simulation readings are synthetic. The 37°C warning and 40°C critical thresholds are classroom demonstration settings, not official IMD criteria. The prediction is a simple trend estimate, not trained machine learning or an official forecast. The station map is illustrative rather than GIS.
